@@ -70,6 +70,10 @@ class Swiper extends Component {
       this.rebuildStackAnimatedValues()
     })
   }
+  
+  getFirstCardIndex = () => {
+    return this.state.firstCardIndex
+  }
 
   calculateCardIndexes = (firstCardIndex, cards) => {
     firstCardIndex = firstCardIndex || 0
