@@ -344,7 +344,8 @@ class Swiper extends Component {
 
   resetTopCard = cb => {
     Animated.spring(this.state.pan, {
-      toValue: 0
+      toValue: 0,
+      friction: 5
     }).start(cb)
 
     this.state.pan.setOffset({
