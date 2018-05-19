@@ -150,7 +150,7 @@ class Swiper extends Component {
   }
 
   onPanResponderMove = (event, gestureState) => {
-    this.props.onSwiping(this._animatedValueX, this._animatedValueY)
+    this.props.onSwiping(event, gestureState)
 
     let { overlayOpacityHorizontalThreshold, overlayOpacityVerticalThreshold } = this.props
     if (!overlayOpacityHorizontalThreshold) {
